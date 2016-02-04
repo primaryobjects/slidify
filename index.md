@@ -19,7 +19,7 @@ Creating a slideshow presentation in R is easy!
 2. Edit Rmd document to create slides.
 3. Publish to html and web!
 
---- .class #id 
+--- .class #id
 ## Installing Slidify
 
 The following code installs slidify in R.
@@ -43,7 +43,7 @@ author('Slidify')
 
 That last command should create ~/Slidify/index.Rmd for you.
 
---- .class #id 
+--- .class #id
 ## Set the Title and Author
 
 index.Rmd should be opened automatically for you.
@@ -68,24 +68,7 @@ knit        : slidify::knit2slides
 
 We're including the widgets "bootstrap, quiz" to support interactive slides.
 
---- &radio
-
-## Quiz 1
-
-What do the widgets "bootstrap, quiz" allow?
-
-1. Displaying a blue background for the presentation.
-2. Starting a new presentation from scratch.
-3. _Including support for interactive slides._
-4. Creating a black & white presentation.
-
-*** .hint
-One of the widgets is named "quiz", which lets the user interact with elements on the slide.
-
-*** .explanation
-bootstrap and quiz allow support for interactive slides, specifically Quiz-enabled slides. See http://slidify.github.io/dcmeetup/demos/interactive/
-
---- .class #id 
+--- .class #id
 ## Adding a Slide
 
 To create a slide, include the following code per slide.
@@ -100,7 +83,7 @@ This is my first slide.
 
 Separate slides with 3 dashes.
 
---- .class #id 
+--- .class #id
 ## Previewing
 
 To preview the slideshow, run the command:
@@ -112,7 +95,7 @@ slidify('index.Rmd')
 
 Then open your folder, navigate into the presentation folder, and double-click index.html.
 
---- .class #id 
+--- .class #id
 ## Making Changes
 
 Any time you modify a slide, run the command again.
@@ -124,9 +107,39 @@ slidify('index.Rmd')
 
 Then refresh the web page to see the results.
 
---- &radio
+--- .class #id
+## Publishing
 
-## Quiz 2
+Slidify automatically creates a git repository for you.
+
+This makes publishing easy.
+
+1. Commit your local changes to git, under the branch name "gh-pages".
+2. Create a repository on GitHub.
+3. Push your repository to GitHub.
+4. Access your presentation at http://username.github.io/project-name
+
+Example:
+http://primaryobjects.github.io/slidify
+
+--- &radio
+## Quiz 1/2
+
+What do the widgets "bootstrap, quiz" allow?
+
+1. Displaying a blue background for the presentation.
+2. Starting a new presentation from scratch.
+3. _Including support for interactive slides._
+4. Creating a black & white presentation.
+
+*** .hint
+One of the widgets is named "quiz", which lets the user interact with elements on the slide.
+
+*** .explanation
+bootstrap and quiz allow support for interactive slides, specifically Quiz-enabled slides. See http://slidify.github.io/dcmeetup/demos/interactive/
+
+--- &radio
+## Quiz 2/2
 
 What command separates slides in a presentation?
 
@@ -148,8 +161,7 @@ For example:
 --- .class #id 
 ```
 
---- .class #id 
-
+--- .class #id
 ## Conclusion
 
 Now, you're a slidify professional!
